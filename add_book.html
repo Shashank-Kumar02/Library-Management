@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h2>Add Book/Movie</h2>
+    <form method="POST" onsubmit="return validateForm(this)">
+        <div class="mb-3">
+            <label class="form-label">Type</label>
+            <select class="form-select" name="type" required>
+                <option value="Book">Book</option>
+                <option value="Movie">Movie</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Author</label>
+            <input type="text" class="form-control" name="author" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Category</label>
+            <select class="form-select" name="category" required>
+                {% for cat in categories %}
+                <option value="{{ cat }}">{{ cat }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Cost</label>
+            <input type="number" class="form-control" name="cost" required step="0.01" min="0">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date of Procurement</label>
+            <input type="date" class="form-control" name="proc_date" value="{{ proc_date_default }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Quantity/Copies</label>
+            <input type="number" class="form-control" name="quantity" required min="1">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+{% endblock %}

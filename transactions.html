@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center">Transactions</h2>
+<div class="list-group">
+    <a href="{{ url_for('book_available') }}" class="list-group-item list-group-item-action">Is book available?</a>
+    <a href="{{ url_for('book_issue') }}" class="list-group-item list-group-item-action">Issue book?</a>
+    <a href="{{ url_for('return_book') }}" class="list-group-item list-group-item-action">Return book?</a>
+    <a href="{{ url_for('pay_fine') }}" class="list-group-item list-group-item-action">Pay Fine?</a>
+</div>
+{% endblock %}

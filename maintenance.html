@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center">Maintenance</h2>
+<div class="list-group">
+    <a href="{{ url_for('add_membership') }}" class="list-group-item list-group-item-action">Add Membership</a>
+    <a href="{{ url_for('update_membership') }}" class="list-group-item list-group-item-action">Update Membership</a>
+    <a href="{{ url_for('add_book') }}" class="list-group-item list-group-item-action">Add Book/Movie</a>
+    <a href="{{ url_for('update_book') }}" class="list-group-item list-group-item-action">Update Book/Movie</a>
+    <a href="{{ url_for('user_management') }}" class="list-group-item list-group-item-action">User Management</a>
+</div>
+{% endblock %}

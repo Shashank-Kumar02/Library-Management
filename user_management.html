@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h2>User Management</h2>
+    <form method="POST" onsubmit="return validateForm(this)">
+        <div class="mb-3">
+            <label class="form-label">User Type</label>
+            <select class="form-select" name="is_new" required>
+                <option value="New">New User</option>
+                <option value="Existing">Existing User</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="active" checked id="active">
+            <label class="form-check-label" for="active">Active</label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="admin" id="admin">
+            <label class="form-check-label" for="admin">Admin</label>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password (for new or to change)</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+{% endblock %}

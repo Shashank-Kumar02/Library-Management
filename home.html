@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center">{{ title }}</h2>
+<h4>Product Details</h4>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr><th>Code No From</th><th>Code No To</th><th>Category</th></tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

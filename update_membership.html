@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h2>Update Membership</h2>
+    <form method="POST" onsubmit="return validateForm(this)">
+        <div class="mb-3">
+            <label class="form-label">Membership Number</label>
+            <input type="number" class="form-control" name="mem_id" value="{{ mem_id }}" required>
+        </div>
+        <button type="submit" name="load" class="btn btn-secondary w-100 mb-3">Load</button>
+        <div class="mb-3">
+            <label class="form-label">Start Date</label>
+            <input type="text" class="form-control" value="{{ start_date }}" readonly>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">End Date</label>
+            <input type="text" class="form-control" value="{{ end_date }}" readonly>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Membership Extension</label>
+            <select class="form-select" name="duration">
+                <option value="6 months">6 months</option>
+                <option value="1 year">1 year</option>
+                <option value="2 years">2 years</option>
+            </select>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" name="remove" id="remove">
+            <label class="form-check-label" for="remove">Membership Remove</label>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+{% endblock %}

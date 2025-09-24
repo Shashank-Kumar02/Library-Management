@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h2>Book Issue</h2>
+    <form method="POST" onsubmit="return validateForm(this)">
+        <div class="mb-3">
+            <label class="form-label">Enter Book Name</label>
+            <input type="text" class="form-control" name="name" value="{{ name_default }}" {% if serial_disabled %}readonly{% endif %} required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter Author</label>
+            <input type="text" class="form-control" name="author" value="{{ author_default }}" {% if serial_disabled %}readonly{% endif %} required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Member ID</label>
+            <input type="number" class="form-control" name="member" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Issue Date</label>
+            <input type="date" class="form-control" name="issue_date" value="{{ issue_date_default }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Return Date</label>
+            <input type="date" class="form-control" name="return_date" value="{{ return_date_default }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Remarks (optional)</label>
+            <textarea class="form-control" name="remarks" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Issue</button>
+    </form>
+</div>
+{% endblock %}

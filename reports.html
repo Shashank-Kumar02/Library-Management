@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center">Reports</h2>
+<div class="list-group">
+    <a href="{{ url_for('master_list', typ='Book') }}" class="list-group-item list-group-item-action">Master List of Books</a>
+    <a href="{{ url_for('master_list', typ='Movie') }}" class="list-group-item list-group-item-action">Master List of Movies</a>
+    <a href="{{ url_for('members_list') }}" class="list-group-item list-group-item-action">Master List of Memberships</a>
+    <a href="{{ url_for('active_issues') }}" class="list-group-item list-group-item-action">Active Issues</a>
+    <a href="{{ url_for('overdue') }}" class="list-group-item list-group-item-action">Overdue Returns</a>
+    <a href="{{ url_for('requests') }}" class="list-group-item list-group-item-action">Pending Issue Requests</a>
+</div>
+{% endblock %}
