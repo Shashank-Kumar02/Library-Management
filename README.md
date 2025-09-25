@@ -28,9 +28,9 @@ Pay pending fines.
 
 # Reports:
 <br/>
-Master lists for books, movies, and memberships.
+      Master lists for books, movies, and memberships.
 <br/>
-Active issues, overdue returns (with fines), and pending requests.
+       Active issues, overdue returns (with fines), and pending requests.
 </br/>
 
 **Database Persistence:** All data stored in library.db (SQLite).
