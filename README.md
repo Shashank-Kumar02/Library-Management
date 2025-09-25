@@ -33,6 +33,7 @@ Pay pending fines.
        Active issues, overdue returns (with fines), and pending requests.
 </br/>
 
+
 **Database Persistence:** All data stored in library.db (SQLite).
 <br/>
 
