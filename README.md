@@ -5,6 +5,7 @@ A simple, desktop-based Library Management System built with Python and Tkinter 
 <br/>
 Authentication: Separate logins for admins (full access) and users (read-only reports and transactions).
 <br/>
+
 # Maintenance (Admin Only):
 <br/>
  Add/update memberships with durations (6 months, 1 year, 2 years).
@@ -13,6 +14,7 @@ Authentication: Separate logins for admins (full access) and users (read-only re
  <br/>
  User management (add/update active/admin status).
  <br/>
+ 
 # Transactions:
 <br/>
  Search for item availability by name/author.
