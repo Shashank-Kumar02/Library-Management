@@ -30,8 +30,10 @@ Master lists for books, movies, and memberships.
 <br/>
 Active issues, overdue returns (with fines), and pending requests.
 </br/>
+
 **Database Persistence:** All data stored in library.db (SQLite).
 <br/>
+
 **Validations:** Mandatory fields, error messages, and basic checks (e.g., item availability, active memberships).
 <br/>
 
@@ -60,6 +62,7 @@ Navigate to the directory: cd library-management-system
 <br/>
 Run the app: python app.py
 <br/>
+
 # Default logins:
 <br/>
    Admin: Username admin, Password adm
