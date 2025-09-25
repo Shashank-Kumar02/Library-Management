@@ -13,7 +13,7 @@ Authentication: Separate logins for admins (full access) and users (read-only re
  <br/>
  User management (add/update active/admin status).
  <br/>
-#  Transactions:
+# Transactions:
 <br/>
  Search for item availability by name/author.
 <br/>
@@ -23,6 +23,7 @@ Return items with automatic fine calculation ($1/day overdue).
 <br/>
 Pay pending fines.
 <br/>
+
 # Reports:
 <br/>
 Master lists for books, movies, and memberships.
@@ -33,6 +34,7 @@ Active issues, overdue returns (with fines), and pending requests.
 <br/>
 **Validations:** Mandatory fields, error messages, and basic checks (e.g., item availability, active memberships).
 <br/>
+
 # Tech Stack
 <br/>
 Python 3.x
@@ -45,6 +47,7 @@ SQLite (for database)
 <br/>
 datetime (for date handling)
 </br>
+
 # Installation
 Ensure Python 3.6+ is installed (Tkinter and sqlite3 are built-in).
 <br/>
@@ -52,11 +55,12 @@ Clone the repo: git clone https://github.com/yourusername/library-management-sys
 <br/>
 Navigate to the directory: cd library-management-system
 <br/>
+
 # Usage
 <br/>
 Run the app: python app.py
 <br/>
-Default logins:
+# Default logins:
 <br/>
    Admin: Username admin, Password adm
    <br/>
